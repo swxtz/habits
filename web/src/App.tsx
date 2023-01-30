@@ -1,14 +1,13 @@
-import { Habit } from "./components/Habit/Habit";
+import { Header } from "./components/Header";
 import "./styles/global.css";
+
 
 export function App() {
   return (
-    <div>
-      <Habit completed={1} />
-      <Habit completed={2} />
-      <Habit completed={3} />
-      <Habit completed={4} />
-      <Habit completed={5} />
+    <div className="w-screen h-screen flex justify-center itens-center">
+      <div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+        <Header />
+      </div>
     </div>
   )
 }
